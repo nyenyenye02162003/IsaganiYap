@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="index.css"
+     title>Simple Website</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Isagani Yap Website</h1>
+    <p>Click the button below to change the background color.</p>
+    <button onclick="changeColor()">Change Color</button>
+    <script>
+        function changeColor() {
+            const colors = ['#f4f4f4', '#ffcccb', '#d4edda', '#cce5ff'];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
+</body>
+</html>
